@@ -21,11 +21,11 @@ The evaluation framework employs a **three-phase methodology**:
 
 Validation employs a **mixed-methods approach** combining automated metrics with expert human evaluation. For technical accuracy, I will benchmark the model against annotated datasets of student Python code containing known error types and competency markers. For pedagogical quality assessment, I will establish a panel of experienced Python educators who will evaluate model-generated prompts using a structured rubric measuring:
 
-• **Conceptual targeting** - accurately addressing underlying misconceptions
-• **Cognitive scaffolding** - providing support without eliminating productive struggle
-• **Inquiry orientation** - encouraging investigation rather than passive reception
-• **Clarity and accessibility** - comprehensible without additional cognitive burden
-• **Learning transfer potential** - promoting generalization beyond immediate context
+• **Conceptual targeting** - accurately addressing underlying misconceptions\
+• **Cognitive scaffolding** - providing support without eliminating productive struggle\
+• **Inquiry orientation** - encouraging investigation rather than passive reception\
+• **Clarity and accessibility** - comprehensible without additional cognitive burden\
+• **Learning transfer potential** - promoting generalization beyond immediate context\
 
 The validation includes **controlled experiments** where student responses to model-generated versus traditional prompts are compared to measure actual learning outcomes. Additionally, I will conduct scalability testing to ensure the solution can handle classroom-sized deployments while maintaining response quality and speed, with particular attention to the trade-offs between model accuracy, computational cost, and educational effectiveness in real-world educational settings.
 
