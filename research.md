@@ -38,79 +38,79 @@ The validation includes **controlled experiments** where student responses to mo
 A model suitable for high-level competence analysis requires **three core capabilities** beyond basic error correction:
 
 1. **Semantic Understanding**\
-   • Ability to comprehend code intent and logic, not just syntax\
-   • Recognition of when syntactically correct code fails to implement intended functionality\
-   • Understanding of program flow and algorithmic reasoning\
+   • Ability to comprehend code intent and logic, not just syntax
+   • Recognition of when syntactically correct code fails to implement intended functionality
+   • Understanding of program flow and algorithmic reasoning
 
 2. **Diagnostic Precision**\
-   • Differentiating between surface mistakes (typos) and fundamental misconceptions\
-   • Identifying root causes: scope confusion, object model misunderstanding\
-   • Providing targeted feedback appropriate to each error type\
+   • Differentiating between surface mistakes (typos) and fundamental misconceptions
+   • Identifying root causes: scope confusion, object model misunderstanding
+   • Providing targeted feedback appropriate to each error type
 
 3. **Pedagogical Reasoning**\
-   • Generating educationally constructive responses that promote learning transfer\
-   • Strategic questioning that activates prior knowledge\
-   • Scaffolded guidance maintaining appropriate challenge levels\
-   • Fostering metacognitive development through reflective prompts\
+   • Generating educationally constructive responses that promote learning transfer
+   • Strategic questioning that activates prior knowledge
+   • Scaffolded guidance maintaining appropriate challenge levels
+   • Fostering metacognitive development through reflective prompts
 
 ### **How would you test whether a model generates meaningful prompts?**
 
 Testing prompt meaningfulness requires a **qualitative, expert-centered evaluation framework**:
 
 #### **Evaluation Setup**\
-• Establish a panel of experienced Python educators\
-• Provide student code containing documented conceptual errors\
-• Generate model prompts for systematic evaluation\
+• Establish a panel of experienced Python educators
+• Provide student code containing documented conceptual errors
+• Generate model prompts for systematic evaluation
 
 #### **Multi-Dimensional Rubric Assessment**
-• **Conceptual Targeting:** Does the prompt accurately address underlying misconceptions rather than surface symptoms?\
-• **Cognitive Scaffolding:** Does it provide appropriate support without eliminating productive struggle?\
-• **Inquiry Orientation:** Does it encourage active investigation rather than passive information reception?\
-• **Clarity and Accessibility:** Is it comprehensible without introducing additional cognitive burden?\
-• **Learning Transfer Potential:** Does it promote generalization beyond the immediate problem context?\
+• **Conceptual Targeting:** Does the prompt accurately address underlying misconceptions rather than surface symptoms?
+• **Cognitive Scaffolding:** Does it provide appropriate support without eliminating productive struggle?
+• **Inquiry Orientation:** Does it encourage active investigation rather than passive information reception?
+• **Clarity and Accessibility:** Is it comprehensible without introducing additional cognitive burden?
+• **Learning Transfer Potential:** Does it promote generalization beyond the immediate problem context?
 
 #### **Validation Methods**
-• **Expert rating sessions** with structured evaluation protocols\
-• **Controlled studies** measuring actual student learning outcomes\
-• **Comparative analysis** between model-generated versus human-created prompts\
-• **Longitudinal assessment** of learning progression and retention\
+• **Expert rating sessions** with structured evaluation protocols
+• **Controlled studies** measuring actual student learning outcomes
+• **Comparative analysis** between model-generated versus human-created prompts
+• **Longitudinal assessment** of learning progression and retention
 
 ### **What trade-offs might exist between accuracy, interpretability, and cost?**
 
 Significant trade-offs exist across these dimensions with **direct educational implications**:
 
 #### **Accuracy vs. Cost**
-• **Large Models (34B+ parameters):**\
-  - Superior code comprehension and nuanced error analysis\
-  - Substantial computational resources and operational costs\
-  - Potential latency issues disrupting interactive learning\
+• **Large Models (34B+ parameters):**
+  - Superior code comprehension and nuanced error analysis
+  - Substantial computational resources and operational costs
+  - Potential latency issues disrupting interactive learning
 
-• **Smaller Models (7B parameters):**\
-  - Faster response times and lower operational overhead\
-  - Deployable on standard educational infrastructure\
-  - May miss subtle conceptual errors or generate less sophisticated responses\
+• **Smaller Models (7B parameters):**
+  - Faster response times and lower operational overhead
+  - Deployable on standard educational infrastructure
+  - May miss subtle conceptual errors or generate less sophisticated responses
 
 #### **Interpretability vs. Accuracy**
-• **High-Accuracy Models:**\
-  - Superior performance on complex reasoning tasks\
-  - Function as "black boxes" with opaque decision-making\
-  - Difficult to identify pedagogical biases or validate reasoning\
+• **High-Accuracy Models:**
+  - Superior performance on complex reasoning tasks
+  - Function as "black boxes" with opaque decision-making
+  - Difficult to identify pedagogical biases or validate reasoning
 
 • **Interpretable Models:**\
-  - Clear insight into decision-making processes\
-  - Easier to audit and fine-tune educational approaches\
-  - May sacrifice analytical depth needed for sophisticated competence analysis\
+  - Clear insight into decision-making processes
+  - Easier to audit and fine-tune educational approaches
+  - May sacrifice analytical depth needed for sophisticated competence analysis
 
 #### **Cost-Latency Trade-off**
 • **Educational Context Requirements:**\
-  - Immediate feedback is crucial for student engagement and learning momentum\
-  - Budget constraints in educational institutions\
-  - Need for scalable solutions across diverse classroom sizes\
+  - Immediate feedback is crucial for student engagement and learning momentum
+  - Budget constraints in educational institutions
+  - Need for scalable solutions across diverse classroom sizes
 
 • **Strategic Considerations:**
-  - Accept reduced analytical sophistication for pedagogical responsiveness\
-  - Balance comprehensive analysis with financial sustainability\
-  - Optimize for real-time interaction over exhaustive evaluation\
+  - Accept reduced analytical sophistication for pedagogical responsiveness
+  - Balance comprehensive analysis with financial sustainability
+  - Optimize for real-time interaction over exhaustive evaluation
 
 ### **Why did you choose the model you evaluated, and what are its strengths or limitations?**
 
@@ -119,61 +119,61 @@ I selected **CodeLlama-7B-Python** for its optimal balance of specialized capabi
 #### **Strengths**
 
 ##### **Python-Specific Optimization**
-• Dedicated fine-tuning on Python-centric datasets\
-• Superior understanding of Python idioms and language-specific patterns\
-• Enhanced recognition of common student pitfalls:\
-  - Mutable default arguments\
-  - Generator vs. list comprehension trade-offs\
-  - Decorator functionality and scope issues\
-  - Object-oriented programming misconceptions\
+• Dedicated fine-tuning on Python-centric datasets
+• Superior understanding of Python idioms and language-specific patterns
+• Enhanced recognition of common student pitfalls:
+  - Mutable default arguments
+  - Generator vs. list comprehension trade-offs
+  - Decorator functionality and scope issues
+  - Object-oriented programming misconceptions
 
 ##### **Educational Accessibility** 
-• **Manageable computational requirements** - deployable on standard institutional infrastructure\
-• **No specialized hardware needed** - runs on consumer-grade GPUs\
-• **Scalable across educational contexts** - from resource-constrained institutions to individual educators\
-• **Cost-effective operation** - lower inference costs enable widespread adoption\
+• **Manageable computational requirements** - deployable on standard institutional infrastructure
+• **No specialized hardware needed** - runs on consumer-grade GPUs
+• **Scalable across educational contexts** - from resource-constrained institutions to individual educators
+• **Cost-effective operation** - lower inference costs enable widespread adoption
 
 ##### **Strong Foundational Architecture**
-• **Built on Llama-2 foundation** - inherits robust natural language generation capabilities\
-• **Coherent educational feedback** - produces clear explanations and relevant analogies\
-• **Contextual appropriateness** - maintains educational tone and complexity level\
-• **Engaging questioning sequences** - enhances pedagogical interaction quality\
+• **Built on Llama-2 foundation** - inherits robust natural language generation capabilities
+• **Coherent educational feedback** - produces clear explanations and relevant analogies
+• **Contextual appropriateness** - maintains educational tone and complexity level
+• **Engaging questioning sequences** - enhances pedagogical interaction quality
 
 ##### **Open-Source Advantages**
-• **Permissive Apache 2.0 licensing** - no recurring fees or usage restrictions\
-• **Institutional autonomy** - can be modified and integrated into existing systems\
-• **Long-term sustainability** - no vendor lock-in or licensing dependencies\
-• **Community support** - active development and educational use cases\
+• **Permissive Apache 2.0 licensing** - no recurring fees or usage restrictions
+• **Institutional autonomy** - can be modified and integrated into existing systems
+• **Long-term sustainability** - no vendor lock-in or licensing dependencies
+• **Community support** - active development and educational use cases
 
 #### **Limitations**
 
 ##### **Scale Constraints**
-• **7B parameter limitation** may lack sophisticated reasoning for:\
-  - Complex, multi-layered conceptual errors\
-  - Highly nuanced pedagogical responses\
-  - Advanced programming concepts requiring deep analysis\
-  - Large-scale code architecture evaluation\
+• **7B parameter limitation** may lack sophisticated reasoning for:
+  - Complex, multi-layered conceptual errors
+  - Highly nuanced pedagogical responses
+  - Advanced programming concepts requiring deep analysis
+  - Large-scale code architecture evaluation
 
 ##### **Domain Specificity Gaps**
-• **Training data limitations** for:\
-  - Rapidly evolving Python ecosystem elements\
-  - Cutting-edge language features (Python 3.11+ specifics)\
-  - Domain-specific applications (data science, web frameworks)\
-  - Emerging best practices and patterns\
+• **Training data limitations** for:
+  - Rapidly evolving Python ecosystem elements
+  - Cutting-edge language features (Python 3.11+ specifics)
+  - Domain-specific applications (data science, web frameworks)
+  - Emerging best practices and patterns
 
 ##### **Hallucination Risks**
-• **Potential for plausible but incorrect responses:**\
-  - Fabricated explanations that sound authoritative\
-  - Misleading analogies or examples\
-  - Inaccurate technical details\
-  - **Mitigation required:** Validation frameworks and human oversight\
+• **Potential for plausible but incorrect responses:**
+  - Fabricated explanations that sound authoritative
+  - Misleading analogies or examples
+  - Inaccurate technical details
+  - **Mitigation required:** Validation frameworks and human oversight
 
-##### **Context Window Limitations**\
-• **Restricted ability to handle:**\
-  - Large, complex student projects\
-  - Extended tutoring sessions requiring conversation memory\
-  - Multi-file code analysis\
-  - **Solution:** Careful session management and context optimization strategies\
+##### **Context Window Limitations**
+• **Restricted ability to handle:**
+  - Large, complex student projects
+  - Extended tutoring sessions requiring conversation memory
+  - Multi-file code analysis
+  - **Solution:** Careful session management and context optimization strategies
 
 ---
 
