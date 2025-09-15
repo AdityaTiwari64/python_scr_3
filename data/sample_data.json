@@ -1,0 +1,50 @@
+[
+  {
+    "id": "item_001",
+    "value": 15.5,
+    "category": "electronics",
+    "description": "Sample electronic item"
+  },
+  {
+    "id": "item_002", 
+    "value": 8.2,
+    "category": "books",
+    "description": "Educational textbook"
+  },
+  {
+    "id": "item_003",
+    "value": 25.0,
+    "category": "clothing",
+    "description": "Student uniform"
+  },
+  {
+    "id": "item_004",
+    "value": 3.5,
+    "category": "stationery",
+    "description": "Writing supplies"
+  },
+  {
+    "id": "item_005",
+    "value": 45.8,
+    "category": "electronics",
+    "description": "Advanced calculator"
+  },
+  {
+    "id": "item_006",
+    "value": 12.3,
+    "category": "books",
+    "description": "Reference manual"
+  },
+  {
+    "id": "item_007",
+    "value": 7.8,
+    "category": "stationery",
+    "description": "Art supplies"
+  },
+  {
+    "id": "item_008",
+    "value": 32.1,
+    "category": "electronics",
+    "description": "Digital device"
+  }
+]

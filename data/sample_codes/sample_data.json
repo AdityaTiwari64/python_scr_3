@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "value": 25.5,
+    "category": "processing",
+    "timestamp": "2024-01-15T10:30:00Z"
+  },
+  {
+    "id": 2,
+    "value": 45.2,
+    "category": "analysis",
+    "timestamp": "2024-01-15T11:15:00Z"
+  },
+  {
+    "id": 3,
+    "value": 12.8,
+    "category": "processing",
+    "timestamp": "2024-01-15T12:00:00Z"
+  },
+  {
+    "id": 4,
+    "value": 67.1,
+    "category": "validation",
+    "timestamp": "2024-01-15T13:45:00Z"
+  },
+  {
+    "id": 5,
+    "value": 8.3,
+    "category": "analysis",
+    "timestamp": "2024-01-15T14:30:00Z"
+  }
+]

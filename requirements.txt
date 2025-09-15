@@ -1,0 +1,16 @@
+# Minimal requirements for core functionality
+# The implementation primarily uses Python standard library
+
+# Essential packages (your code actually doesn't need external packages)
+# All required modules are built into Python 3.7+:
+# - ast (Abstract Syntax Tree)
+# - sys (System functions)  
+# - typing (Type hints)
+# - dataclasses (Data classes)
+
+# If you want to extend functionality:
+numpy>=1.21.0
+pandas>=1.3.0
+
+# For testing the implementation:
+pytest>=6.2.0
